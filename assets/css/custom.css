@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UhBeeHYUNJUNG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeHYUNJUNG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kimjuim';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_07@1.0/Kimjuim.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메인(상단) */
+
+.logo{
+    animation: 60s linear 0s infinite normal none running rotate;
+    cursor: pointer;
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#titleText{
+    /* font-family: 'Pacifico', cursive; */
+    font-family: "UhBeeHYUNJUNG",cursive;
+}
+
+#detailText{
+    font-family: "Kimjuim",sans-serif;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.image.info {
+    text-align: center;
+    display: block;
+    margin: 0 1rem 0 0;
+}
+
+/* article(상세조회/detail) */
+
+.par{
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 0 0;
+    font-family: "Pretendard-Regular";
+}
+.imgArea{
+    width:35%;
+}
+
+.image.info img{
+    width: 80%;
+}
+
+.image.rule img{
+    width: 25%;
+    margin: 0 auto;
+}
+.rule img:before{
+    background-color: none;
+}
+
+.textArea{
+    width:65%;
+    font-weight: 100;
+}
+
+.textArea p{
+    margin : 0;
+}
+
+.textArea .incSubP{
+    line-height: 1.2rem;
+}
+.textArea .subP{
+    font-size: 0.7rem;
+    color: darkgray;
+    display: block;
+    padding: 0 0.8rem;
+}
+
+#highlightSpan{
+    color:rgb(255, 182, 47);
+}
+
+#raidRuleArea{
+    width: 100%;
+    font-family: "Pretendard-Regular";
+}
+
+.icon img{
+    width: 100%;
+}
+
+/* 모달 */
+/* 길드가입 모달 */
+#joinModal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modalContent {
+    max-width: 1280px;
+    max-height: 720px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    margin: 0 auto;
+}
+
+.closeModalBtn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.bgVideo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.list:hover{
+    background-color: rgb(255, 250, 225);
+    color : rgb(32, 32, 32);
+    border-radius: 2px;
+}
+.list{
+    font-family: "Dovemayo_gothic",sans-serif;
+}
+
+
+/* footer */
+
+hr{
+    width: 50rem;
+}
+
+.admin{
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+    flex: 0 0 auto;
+    width: 10rem;
+    display: inline-block;
+    vertical-align : top;
+}
+
+.section-title{
+    position: relative;
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.2rem;
+    color: rgb(255, 182, 47);
+}
+
+.admin p{
+    margin : 0 0 1rem 0;
+    font-family: "Dovemayo_gothic",sans-serif;
+}

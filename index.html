@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo" onclick="openJoin();">
+							<span class="icon fa-gem"><img src="images/leaf03.png" alt=""/></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<div id="titleText"><h1>풀떼기들</h1></div>
+								<div id="detailText">로스트아크의 다양한 컨텐츠를 좀 더 다채롭게 즐기기 위한 카제로스 친목길드</div>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li class="list"><a href="#info">길드정보</a></li>
+								<li class="list"><a href="#rule">길드규칙</a></li>
+								<li class="list"><a href="#condition">가입조건</a></li>
+								<li class="list"><a href="#contact">가입문의</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+				<div class="modal" id="joinModal">
+					<div class="modalContent" onclick="closeJoin();">
+						<span class="closeModalBtn">&times;</span>
+						<img src="images/popup.png" alt="withUs" style="max-width: 100%; max-height: 100%;">
+					</div>
+				</div>
+					<div id="main">
+						<!-- Intro -->
+						<article id="info">
+							<h2 class="major">길드정보</h2>
+							<span class="image main"><img src="images/grass_logo.png" alt="" /></span>
+							<p id="detailText"><b>풀떼기들</b>은 로스트아크의 다양한 컨텐츠를 좀 더 다채롭고 즐겁게 즐기기 위한 <br>로스트아크 중심의 <s style="font-size:0.8rem">종합게임</s> 친목길드 입니다.</p>
+
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿길드레이드</b>
+									<p>* 모바출 or 구글 스프레드시트로 자유롭게 운영 중</p>
+									<p>* 레이드 등록 시 일정 탭에 내용이 자동 등록</p>
+									<p>* 매주 화요일 23시마다 자동 초기화</p>
+									<p class="incSubP">* <span id="highlightSpan">길드레이드 규칙</span> 있음!<br><span class="subP">길드규칙 메뉴에서 확인 가능합니다.</span></p>
+								</div>
+							</div>
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/blood.png" alt="" style="width: 60%;"/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿부캐길드(혈석길드)</b>
+									<p>* 부캐길드 4개 운영 중</p>
+									<p class="incSubP">* 길드상점 Lv.5(max) / 주간전투+항해 Lv.4(max)<span class="subP">본캐길드 포함 총 4개의 길드가 해당됩니다.</span></p>
+									<p>* 길드그룹으로 설정되어 부캐 접속 시에도 그룹채팅 가능</p>
+									<p>* 부캐길드</p>
+								</div>
+							</div>
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/salad_logo.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿점령전/토벌전</b>
+									<p class="incSubP">* 매주 수요일 8시 10분 진행(반고정)<span class="subP">주말의 경우 예정된 레이드가 있는 경우가 많아 거의 로요일에 진행합니다🫠</span></p>
+									<p class="incSubP">* 월 1회 이상 참여(권장)<span class="subP">현생이슈 등은 제외</span></p>
+								</div>
+							</div>
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/salad_logo.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿기타정보</b>
+									<p>* 풀떼기 주요 광합성 시간(주요 접속시간) : 화요일 ~ 일요일 / 오후 5시 ~ 새벽1시 쯤 (직장인 평균 접속 시간)</p>
+									<p>* 길드 내에 커플 및 부부가 쪼금! 있습니다! 솔로도 많습니다!</p>
+								</div>
+							</div>
+						</article>
+
+						<!-- Rule -->
+						<article id="rule">
+							<h2 class="major">길드규칙</h2>
+							<span class="image main"><img src="images/pic02.jpg" alt=""/></span>
+							<p id="detailText">서로 기분이 상하지 않도록, 즐겁게 플레이 하기 위한 풀떼기들만의 길드 규칙입니다.<br>더 자세한 내용은 가입 후 확인 가능합니다.</p>
+
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/leaf01.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿기본규칙</b>
+									<p>* 길드 내에서 욕설 금지</p>
+									<p class="incSubP">* 존댓말 사용을 전제로 하며 상호간의 반말 금지
+										<span class="subP">유사반말(~했음. ~함. ㅇㅇ. 등)의 잦은 사용은 경고의 대상이 될 수 있습니다</span>
+										<span class="subP">실제 지인/친구 등의 경우는 예외</span>
+									</p>
+									<p class="incSubP">* 길드 분위기 흐리는 행동 금지<span class="subP">신규배척, 따돌림, 뒷담, 비하발언, 물타기, 편가르기, 직업 거르기 등</span></p>
+									<p>* 길드 이미지를 실추시켜 피해주는 행위 금지</p>
+									<p>* 신상 정보 질문 및 유도, 타인의 신상 정보 관련 언급 금지</p>
+									<p>* 경직된 파티 구성 및 과한 친목으로 무리 생성 금지</p>
+								</div>
+							</div>
+							<div style="margin:1rem auto;"><div class="image rule"><img src="images/leaf04.png" alt=""/></div></div>
+							<div class="textArea" id="raidRuleArea" width="100%">
+								<b>🌿레이드규칙</b>
+								<p>* 길드레이드 = ✨즐겁게 편하게✨<span style="font-size: 0.7rem;"> (+ 빠르게)</span></p>
+								<p>* 인원 부족하여 공팟 모집 시 과반수 이상 일 경우 길드팟 반드시 명시</p>
+								<p class="incSubP">* 길드레이드 참여 기본 값 = 숙련 + 공팟 출입 가능 세팅
+									<span class="subP">- 숙련이 아닐 경우 레이드 시트에 별도로 기입</span>
+									<span class="subP">- 쌀먹 캐릭터로 길드원들 버스 탈 생각 금지</span>
+									<span class="subP">- 공팟 최소 기준으로 스펙 좋은 파티에 지속적으로 비비는 행위는 경고 대상</span>
+									<span class="subP">- (품앗이 형태 없이) 스펙 낮은 캐릭터로만 참여하는 행동 금지</span>
+									<span class="subP">- 숙련도 속여서 레이드 클리어에 지장주는 행동 금지</span>
+									<span class="subP">- 위에서 명시한 행동으로 인해 길드레이드 활성화에 지장을 줄 경우 길드 운영에 대한 방해로 간주하여 정도에 따라 길드레이드 참여 금지 및 추방조치될 수 있습니다</span>
+								</p>
+								<p class="incSubP">* 길드레이드 내에서 실수가 있더라도 너무 화내지말고 합시당
+									<span class="subP">- 숙련이 맞으나 컨디션에 따라 실수하는 상황이 발생할 수도 있으며, 그 때 무안을 주거나 과하게 짜증내는 행위 지양</span>
+									<span class="subP">- 본인은 실수가 손에 꼽는 빡숙이라 실수가 용납이 잘 안된다 = 레이드 빡숙 길드 가입을 권고드립니다. 제발😶‍🌫️</span>
+									<span class="subP">- 숙코가 참여해도 화내지 말고 참으라는 말 아닙니다. 친목길드이니 너무 화내지 말고 즐겁게!</span>
+									<span class="subP">- 숙팟에서 공팟인원 있을 때 무조건적으로 감싸주며 쉴드 쳐주라는 얘기가 아니며, 운영진이 쉴드로 쳐버릴 수 있습니다🔨</span>
+								</p>
+								<p class="incSubP">* 레이드규칙은 유도리있게 지킬 것! <span class="subP">- 레이드 진행 시 규칙에 과도하게 집착하여 조건 운운하지 말고 관리자에게 신고해주세요</span></p>
+							</div>
+						</article>
+
+						<!-- Condition -->
+						<article id="condition">
+							<h2 class="major">가입조건</h2>
+							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+							
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿새싹 심기(가입환영)</b>
+									<p>* 20살 이상 으른의 매너를 가진 사람</p>
+									<p class="incSubP">* 길드 디스코드 필수참여
+										<span class="subP">(공지사항 확인용 / 음성참여 자유O / 오픈 카톡 X)</span>
+										<span class="subP">그치만.. 참여가 활발하신 분 매우 환영..(´▽`ʃ♡ƪ)</span>
+									</p>
+									<p>* 함께 컨텐츠를 즐기며 절겁게 성장하실 분!</p>
+									<p>* 길드 규칙 잘 지켜주실 분</p>
+									<p>* 친목길드 답게 최소한은 활동해주실 분!</p>
+								</div>
+							</div>
+
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>❌새싹 뽑아버리기(가입불가)</b>
+									<p>* 여/남미새, 뒷담러, 물타기, 정치질, 훈수, 무리생성 등<br>길드의 분위기를 흐리는 사람</p>
+									<p>* 극단적 성향/악질적인 커뮤니티 이용자</p>
+									<p class="incSubP">* 악질유저
+										<span class="subP">날먹하기 위한 구걸, 전문 버스 기사, 로아가 생업인 쌀먹러, 비매너 행위, 사사게 스타 등</span>
+									</p>
+									<p>* 불건전한 닉네임</p>
+									<p>* 이중길드 가입자(부캐길드 포함), 철새 유저</p>
+									<p>* 주요 컨텐츠를 참여중인 <span id="highlightSpan">고정팟끼리만</span>하는 사람</p>
+								</div>
+							</div>
+
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+								</div>
+								<div class="textArea">
+									<b>🔶기타조건</b>
+									<p>* 4인 이상 단체 가입은 어렵습니다.</p>
+									<p>* 지나친 솔로 플레이로 어울리지 못하고 혈석길드처럼 행동하는 사람은 가입이 어렵습니다.</p>
+									<p>* 길드가입 패널티가 있을 경우 가입 진행이 되지 않습니다.</p>
+								</div>
+							</div>
+						</article>
+
+						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">가입문의</h2>
+							<p>치즈떡케이크 / 음유시인송진화씨 / 초연한너구리</p>
+							<p>인게임 친구추가 / 우편 / 로아톡 / 귓속말으로 문의주세요</p>
+							<p><a href="https://discord.gg/Bf6dR88da5" target="_blank">가입 문의용 디스코드 서버 이동</a></p>
+						</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<hr>
+						<div class="admin">
+							<h4 class="section-title">Master</h4>
+							<p>치즈떡케이크</p>
+						</div>
+						<div class="admin">
+							<h4 class="section-title">SubMaster</h4>
+							<p>음유시인송진화씨</p>
+						</div>
+						<div class="admin">
+							<h4 class="section-title">Executives</h4>
+							<p>초연한너구리</p>
+							<p>너구라치</p>
+						</div>
+						<div class="admin">
+							<h4 class="section-title">Manager</h4>
+							<p>무법감귤</p>
+						</div>
+						<!-- <p class="copyright">&copy; Untitled. Design: HTML5 UP</a>.</p> -->
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg">
+				<video class="bgVideo" autoplay muted loop>
+					<source src="images/Grass.mp4" type="video/mp4">
+				</video>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.js"></script>
+	</body>
+</html>
