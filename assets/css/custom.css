@@ -68,23 +68,29 @@
     margin-top: 2rem;
 }
 
-.image.info {
-    text-align: center;
-    display: block;
-    margin: 0 1rem 0 0;
-}
-
 /* article(상세조회/detail) */
 
 .par{
     width: 100%;
     display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
     margin: 1rem 0 0 0;
     font-family: "Pretendard-Regular";
 }
 .imgArea{
     width:35%;
 }
+
+.image.info {
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+
 
 .image.info img{
     width: 80%;
@@ -101,6 +107,7 @@
 .textArea{
     width:65%;
     font-weight: 100;
+    vertical-align:middle;
 }
 
 .textArea p{
@@ -117,7 +124,7 @@
     padding: 0 0.8rem;
 }
 
-#highlightSpan{
+.highlightSpan{
     color:rgb(255, 182, 47);
 }
 
@@ -128,6 +135,14 @@
 
 .icon img{
     width: 100%;
+}
+
+.textArea b{
+    font-size:1.2rem;
+}
+
+.contactId{
+    cursor: pointer;
 }
 
 /* 모달 */
@@ -173,6 +188,7 @@
 .list{
     font-family: "Dovemayo_gothic",sans-serif;
 }
+
 
 
 /* footer */

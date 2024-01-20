@@ -23,3 +23,20 @@ function closeRaidRuleModal() {
     $("#raidRuleModal").fadeOut();
     $("body").css("overflow", "auto"); // 스크롤을 다시 허용합니다.
 }
+
+function copyId(el){
+    var copyText = el.innerText || el.textContent;
+    var textArea = $("<textarea>");
+
+    var textArea = document.createElement("textarea");
+    textArea.value = copyText;
+    document.body.appendChild(textArea);
+
+    textArea.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(textArea);
+
+    // 복사 완료 알림
+    alert("아이디가 클립보드에 복사되었습니다 : " + copyText);
+}

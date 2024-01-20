@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>풀떼기들</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+		<link rel="icon" href="/images/leaf03.png"/>
+		<link rel="apple-touch-icon" href="/images/leaf03.png"/>
 	</head>
 	<body class="is-preload">
 
@@ -59,7 +61,7 @@
 									<p>* 모바출 or 구글 스프레드시트로 자유롭게 운영 중</p>
 									<p>* 레이드 등록 시 일정 탭에 내용이 자동 등록</p>
 									<p>* 매주 화요일 23시마다 자동 초기화</p>
-									<p class="incSubP">* <span id="highlightSpan">길드레이드 규칙</span> 있음!<br><span class="subP">길드규칙 메뉴에서 확인 가능합니다.</span></p>
+									<p class="incSubP">* <span class="highlightSpan">길드레이드 규칙</span> 있음!<br><span class="subP">길드규칙 메뉴에서 확인 가능합니다.</span></p>
 								</div>
 							</div>
 							<div class="par">
@@ -90,8 +92,7 @@
 								</div>
 								<div class="textArea">
 									<b>🌿기타정보</b>
-									<p>* 풀떼기 주요 광합성 시간(주요 접속시간) : 화요일 ~ 일요일 / 오후 5시 ~ 새벽1시 쯤 (직장인 평균 접속 시간)</p>
-									<p>* 길드 내에 커플 및 부부가 쪼금! 있습니다! 솔로도 많습니다!</p>
+									<p>* 풀떼기 주요 광합성 시간(주요 접속시간): <br>&nbsp;수요일~일요일 / 17:00~01:00 쯤<span class="subP" style="display: inline-block;">(직장인 평균 접속 시간)</span></p>
 								</div>
 							</div>
 						</article>
@@ -149,7 +150,7 @@
 							
 							<div class="par">
 								<div class="imgArea">
-									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+									<span class="image info"><img src="images/good.png" alt=""/></span>
 								</div>
 								<div class="textArea">
 									<b>🌿새싹 심기(가입환영)</b>
@@ -166,7 +167,7 @@
 
 							<div class="par">
 								<div class="imgArea">
-									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+									<span class="image info"><img src="images/bad.png" alt=""/></span>
 								</div>
 								<div class="textArea">
 									<b>❌새싹 뽑아버리기(가입불가)</b>
@@ -177,13 +178,13 @@
 									</p>
 									<p>* 불건전한 닉네임</p>
 									<p>* 이중길드 가입자(부캐길드 포함), 철새 유저</p>
-									<p>* 주요 컨텐츠를 참여중인 <span id="highlightSpan">고정팟끼리만</span>하는 사람</p>
+									<p>* 주요 컨텐츠를 참여중인 <span class="highlightSpan">고정팟끼리만</span>하는 사람</p>
 								</div>
 							</div>
 
 							<div class="par">
 								<div class="imgArea">
-									<span class="image info"><img src="images/spreadSheet.png" alt=""/></span>
+									<span class="image info"><img src="images/etc.png" alt=""/></span>
 								</div>
 								<div class="textArea">
 									<b>🔶기타조건</b>
@@ -197,9 +198,30 @@
 						<!-- Contact -->
 						<article id="contact">
 							<h2 class="major">가입문의</h2>
-							<p>치즈떡케이크 / 음유시인송진화씨 / 초연한너구리</p>
-							<p>인게임 친구추가 / 우편 / 로아톡 / 귓속말으로 문의주세요</p>
-							<p><a href="https://discord.gg/Bf6dR88da5" target="_blank">가입 문의용 디스코드 서버 이동</a></p>
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/lostarkicon.jpg" alt="" style="border-radius: 50%; width: 5rem;"/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿인게임</b>
+									<p class="incSubP">
+											<span class="contactId" onclick="copyId(this);">치즈떡케이크</span> 
+											/ <span class="contactId"  onclick="copyId(this);">음유시인송진화씨</span> 
+											/ <span class="contactId"  onclick="copyId(this);">초연한너구리</span> 
+											<span class="subP" style="display: inline; padding: 0;">/ 무법감귤</span>
+									</p>
+								</div>
+							</div>
+							<div class="par">
+								<div class="imgArea">
+									<span class="image info"><img src="images/discordicon.png" alt="" style="border-radius: 50%;  width: 6rem;"/></span>
+								</div>
+								<div class="textArea">
+									<b>🌿디스코드</b>
+									<p>1) 친구추가 : <span class="highlightSpan contactId" onclick="copyId(this);">.songjin</span></p>
+									<p>2) <a href="https://discord.gg/Bf6dR88da5" target="_blank">가입 문의용 디스코드 서버 이동</a></p>
+								</div>
+							</div>
 						</article>
 					</div>
 
@@ -217,7 +239,6 @@
 						<div class="admin">
 							<h4 class="section-title">Executives</h4>
 							<p>초연한너구리</p>
-							<p>너구라치</p>
 						</div>
 						<div class="admin">
 							<h4 class="section-title">Manager</h4>
