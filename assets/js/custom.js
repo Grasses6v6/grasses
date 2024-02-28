@@ -38,5 +38,22 @@ function copyId(el){
     document.body.removeChild(textArea);
 
     // 복사 완료 알림
-    alert("아이디가 클립보드에 복사되었습니다 : " + copyText);
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'center-center',
+        showConfirmButton: false,
+        timer: 2500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+  
+      Toast.fire({
+        width: 500,
+        icon: "success",
+        title: "아이디가 클립보드에 복사되었습니다",
+        text : copyText
+      })
 }
